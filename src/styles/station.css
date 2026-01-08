@@ -1,0 +1,172 @@
+.station-page {
+    padding: 10px 0px;
+    width: 100%;
+    height: 100vh;
+}
+
+.main-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+}
+
+.small-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card-header {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1E1E1E;
+    margin-bottom: 2px;
+}
+
+.card-subheader {
+    font-size: 12px;
+    color: #666666;
+    margin-bottom: 4px;
+}
+
+.card-value {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 8px;
+    margin-top: 6px;
+    color: var(--primary);
+}
+
+.card-subtext {
+    font-size: 12px;
+    font-style: italic;
+    color: #666666;
+}
+
+.analytics-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.box {
+  background-color: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.wide-card {
+  grid-column: span 2;
+  flex-direction: column;
+  text-align: left;
+}
+
+.large-card {
+  grid-column: span 2;
+  grid-row: span 2;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  padding: 24px;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: #1E1E1E;
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.model-metrics {
+  display: grid;
+  gap: 6px 12px;
+  font-size: 18px;
+}
+
+.model-metrics div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.model-metrics span:first-child {
+  color: var(--text-primary);
+  font-weight: 400;
+  font-style: italic;
+}
+
+.model-metrics span:last-child {
+  color: #1666ba;
+  font-weight: 700;
+  text-align: right;
+  margin-left: 24px;
+}
+
+.risk-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-top: 1px solid #B8B6B6;
+  border-bottom: 1px solid #B8B6B6;
+  text-align: left;
+}
+
+.risk-table tr:not(:last-child) {
+  border-bottom: 1px solid #B8B6B6;
+}
+
+.risk-table td {
+  padding: 14px 8px;
+  vertical-align: top;
+}
+
+.risk-table .icon {
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  text-align: center;
+  color: var(--primary)
+}
+
+.risk-table strong {
+  display: block;
+  font-size: 16px;
+  color: #1e1e1e;
+}
+
+.risk-table p {
+  margin: 2px 0 0;
+  font-size: 12px;
+  color: #666666;
+}
+
+@media (max-width: 1200px) {
+    .main-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .main-cards {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .card {
+        padding: 20px;
+    }
+    
+    .card-value {
+        font-size: 40px;
+    }
+}

@@ -1,0 +1,46 @@
+.selector {
+  position: relative;
+  width: 200px;
+}
+
+.selector select, .selector input {
+  width: 100%;
+  padding: 14px 44px 14px 18px;
+  border-radius: 16px;
+  border: 2px solid #B8BBC2;
+  background-color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  color: #1e1e1e;
+  appearance: none;
+  cursor: pointer;
+}
+
+.chevron, .date-icon {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #1e1e1e;
+  cursor: pointer;
+}
+
+.selector input::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+.selector input:focus {
+  outline: none;
+  stroke-width: 1px;
+  border-color: #1e1e1e;
+}
+
+.selector select:hover {
+  border-color: #B8BBC2;
+}
+
+.selector select:focus {
+  outline: none;
+  border-color: #1e1e1e;
+}
+

@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 32px;
+}
+
+.header-title {
+  font-size: 36px;
+  font-weight: 2000;
+}
+
+.selectors {
+  display: flex;
+  gap: 16px;
+}

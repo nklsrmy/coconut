@@ -1,0 +1,52 @@
+.sidebar {
+  width: 300px;
+  background-color: white;
+  color: #1666ba;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 16px;
+}
+
+.sidebar-title {
+  font-weight: 600;
+  font-size: 36px;
+  margin-bottom: 120px;
+  text-align: center;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.nav-item {
+  background: transparent;
+  border: none;
+  color: #666666;
+  text-align: left;
+  padding: 10px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.2s ease;
+}
+
+.nav-item:hover {
+  background-color: #1666ba;
+  color: white;
+}
+
+.nav-item.active {
+  background-color: #1666ba;
+  color: white;
+  font-weight: 600;
+}
+
+.nav-icon {
+  width: 25px;
+  height: 25px;
+  flex-shrink: 0;
+  margin-right: 10px;
+  vertical-align: middle;
+}
